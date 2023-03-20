@@ -1,5 +1,5 @@
 import XCTest
-import PromiseKit
+import ArculusPromiseKit
 
 class RaceTests: XCTestCase {
     func test1() {

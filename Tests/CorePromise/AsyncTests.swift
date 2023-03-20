@@ -1,4 +1,4 @@
-import PromiseKit
+import ArculusPromiseKit
 import XCTest
 
 private enum Error: Swift.Error { case dummy }

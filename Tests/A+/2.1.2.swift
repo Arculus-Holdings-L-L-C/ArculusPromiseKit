@@ -1,4 +1,4 @@
-import PromiseKit
+import ArculusPromiseKit
 import XCTest
 
 class Test212: XCTestCase {

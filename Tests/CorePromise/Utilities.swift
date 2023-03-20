@@ -1,4 +1,4 @@
-import PromiseKit
+import ArculusPromiseKit
 
 extension Promise {
     func silenceWarning() {}

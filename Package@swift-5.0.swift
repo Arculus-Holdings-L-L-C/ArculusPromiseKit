@@ -2,15 +2,15 @@
 
 import PackageDescription
 
-let pkg = Package(name: "PromiseKit")
+let pkg = Package(name: "ArculusPromiseKit")
 pkg.platforms = [
    .macOS(.v10_10), .iOS(.v8), .tvOS(.v9), .watchOS(.v2)
 ]
 pkg.products = [
-    .library(name: "PromiseKit", targets: ["PromiseKit"]),
+    .library(name: "ArculusPromiseKit", targets: ["ArculusPromiseKit"]),
 ]
 
-let pmk: Target = .target(name: "PromiseKit")
+let pmk: Target = .target(name: "ArculusPromiseKit")
 pmk.path = "Sources"
 pmk.exclude = [
     "AnyPromise.swift",
@@ -28,6 +28,6 @@ pmk.exclude = [
 pkg.swiftLanguageVersions = [.v4, .v4_2, .v5]
 pkg.targets = [
     pmk,
-    .testTarget(name: "APlus", dependencies: ["PromiseKit"], path: "Tests/A+"),
-    .testTarget(name: "CorePromise", dependencies: ["PromiseKit"], path: "Tests/CorePromise"),
+    .testTarget(name: "APlus", dependencies: ["ArculusPromiseKit"], path: "Tests/A+"),
+    .testTarget(name: "CorePromise", dependencies: ["ArculusPromiseKit"], path: "Tests/CorePromise"),
 ]

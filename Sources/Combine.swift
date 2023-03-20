@@ -28,7 +28,7 @@ public extension Promise {
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 public extension Future {
-    func promise() -> PromiseKit.Promise<Output> {
+    func promise() -> ArculusPromiseKit.Promise<Output> {
         return .init { [weak self] resolver in
             var cancellable: AnyCancellable?
             cancellable = self?.sink(receiveCompletion: { completion in

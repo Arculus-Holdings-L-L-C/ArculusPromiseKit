@@ -1,5 +1,5 @@
 import XCTest
-import PromiseKit
+import ArculusPromiseKit
 
 class WhenConcurrentTestCase_Swift: XCTestCase {
 

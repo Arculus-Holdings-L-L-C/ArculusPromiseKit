@@ -7,7 +7,7 @@
 //
 
 import class Foundation.Thread
-import PromiseKit
+import ArculusPromiseKit
 import Dispatch
 import XCTest
 
