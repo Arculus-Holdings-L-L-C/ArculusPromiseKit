@@ -4,10 +4,10 @@ import PackageDescription
 
 let pkg = Package(name: "ArculusPromiseKit")
 pkg.products = [
-    .library(name: "ArculusPromiseKit", targets: ["PromiseKit"]),
+    .library(name: "ArculusPromiseKit", targets: ["ArculusPromiseKit"]),
 ]
 
-let pmk: Target = .target(name: "PromiseKit")
+let pmk: Target = .target(name: "ArculusPromiseKit")
 pmk.path = "Sources"
 pmk.exclude = [
     "AnyPromise.swift",

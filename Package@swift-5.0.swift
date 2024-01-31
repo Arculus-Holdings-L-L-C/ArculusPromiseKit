@@ -7,10 +7,10 @@ pkg.platforms = [
    .macOS(.v10_10), .iOS(.v8), .tvOS(.v9), .watchOS(.v2)
 ]
 pkg.products = [
-    .library(name: "ArculusPromiseKit", targets: ["PromiseKit"]),
+    .library(name: "ArculusPromiseKit", targets: ["ArculusPromiseKit"]),
 ]
 
-let pmk: Target = .target(name: "PromiseKit")
+let pmk: Target = .target(name: "ArculusPromiseKit")
 pmk.path = "Sources"
 pmk.exclude = [
     "AnyPromise.swift",
