@@ -1,4 +1,4 @@
-import PromiseKit
+import ArculusPromiseKit
 import Dispatch
 import XCTest
 
@@ -12,7 +12,7 @@ private let timeout: TimeInterval = 10
 extension XCTestCase {
     func describe(_ description: String, file: StaticString = #file, line: UInt = #line, body: () throws -> Void) {
 
-        PromiseKit.conf.Q.map = .main
+        ArculusPromiseKit.conf.Q.map = .main
 
         do {
             try body()
